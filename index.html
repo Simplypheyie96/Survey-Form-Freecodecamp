@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form for Freecodecamp</h1>
+    <p id="description">Please take time to help us improve this platform</p>
+    <form id="survey-form">
+      <div>
+        <label for="first-name" id="name-label">
+          Name:
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label">
+          Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="olive@gmail.com"
+            required
+          />
+        </label>
+        <label for="number" id="number-label">
+          Age:
+          <input
+            id="number"
+            type="number"
+            min="0"
+            max="150"
+            placeholder="Enter your age"
+          />
+        </label>
+      </div>
+      <div class="section-end">
+        <label
+          >What is your current role
+          <select id="dropdown">
+            <option value="">(select role)</option>
+            <option value="1">Full-time Job</option>
+            <option value="2">Part-time job</option>
+            <option value="3">Student</option>
+            <option value="4">Others</option>
+          </select>
+        </label>
+      </div>
+      <div class="section-end">
+        <legend>
+          How satisfied are you with the quality of the freeCodeCamp curriculum?
+        </legend>
+        <label>
+          <input
+            class="inline"
+            type="radio"
+            name="satisfaction"
+            value="very-satisfied"
+          />
+          Very satisfied</label
+        >
+        <label>
+          <input
+            class="inline"
+            type="radio"
+            name="satisfaction"
+            value="Somewhat-satisfied"
+          />
+          Somewhat satisfied</label
+        >
+        <label>
+          <input
+            class="inline"
+            type="radio"
+            name="satisfaction"
+            value="neutral"
+          />
+          Neutral</label
+        >
+        <label>
+          <input
+            class="inline"
+            type="radio"
+            name="satisfaction"
+            value="somewhat-dissatisfied"
+          />
+          Somewhat dissatisfied</label
+        >
+        <label>
+          <input
+            class="inline"
+            type="radio"
+            name="satisfaction"
+            value="very-dissatisfied"
+          />
+          Very dissatisfied</label
+        >
+      </div>
+      <div>
+        <legend>
+          What learning resources would you like to see added to freeCodeCamp?
+          (Select all that apply)
+        </legend>
+        <label>
+          <input
+            class="inline"
+            type="checkbox"
+            name="learning-resources"
+            value="video"
+          />
+          More video tutorials
+        </label>
+        <label>
+          <input
+            class="inline"
+            type="checkbox"
+            name="learning-resources"
+            value="challenges"
+          />
+          More interactive coding challenges
+        </label>
+        <label>
+          <input
+            class="inline"
+            type="checkbox"
+            name="learning-resources"
+            value="projects"
+          />
+          Project-based learning opportunities
+        </label>
+        <label>
+          <input
+            class="inline"
+            type="checkbox"
+            name="learning-resources"
+            value="mentorship"
+          />
+          Career mentorship program
+        </label>
+        <label>
+          <input
+            class="inline"
+            type="checkbox"
+            name="learning-resources"
+            value="live-coding"
+          />
+          Live coding sessions with instructors
+        </label>
+        <label class="section-start" for="comments"
+          >Any Additional comments?
+          <textarea
+            id="comments"
+            name="comments"
+            rows="3"
+            cols="30"
+            placeholder="Add additional comments here..."
+          ></textarea>
+        </label>
+        <button class="btn" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
